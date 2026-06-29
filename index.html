@@ -1,334 +1,117 @@
-```html
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ألف مبروك يا حسناء 🎓🇪🇬💖</title>
-
-    <!-- Arabic Fonts -->
+    <title>Congratulations Hassnaa! 🎓🌸</title>
+    <!-- Google Fonts for premium typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- FontAwesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Your CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for beautiful icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Background Effects -->
+    <!-- Canvas for Floating Petals and Confetti Background -->
     <canvas id="canvas-overlay"></canvas>
 
-    <!-- Music -->
+    <!-- Background Music Controller -->
     <div class="music-player" id="music-player">
-        <audio id="bg-music" loop
-            src="https://assets.mixkit.co/music/preview/mixkit-dreaming-big-31.mp3">
-        </audio>
-
-        <button id="music-toggle" class="pulse">
+        <audio id="bg-music" loop src="https://assets.mixkit.co/music/preview/mixkit-dreaming-big-31.mp3"></audio>
+        <button id="music-toggle" aria-label="Toggle Music" class="pulse">
             <i class="fas fa-music"></i>
         </button>
-
-        <span class="music-tooltip">
-            شغلي الموسيقى 🎵
-        </span>
+        <span class="music-tooltip">Listen to soft music 🎵</span>
     </div>
 
-    <!-- ================= HERO ================= -->
-
+    <!-- Celebration Screen / Hero Section -->
     <header class="hero">
-
         <div class="hero-content">
-
-            <div class="hero-badge fade-in">
-                🇪🇬 مناقشة مشروع التخرج 🇪🇬
-            </div>
-
-            <h1 class="hero-title fade-in-delay">
-                🎓 ألف  مبروك يا حسناء 🎓
-            </h1>
-
-            <p class="hero-subtitle fade-in-delay-2">
-
-                النهارده مش يوم عادي...
-
-                النهارده يوم تعب سنين،
-                يوم السهر،
-                والاجتهاد،
-                وتحقيق حلم كبير.
-
-                ربنا
-                يكتبلك نجاح أكبر وأجمل في كل خطوة جاية.
-
-            </p>
-
+            <div class="hero-badge fade-in">GRADUATION DISCUSSION CELEBRATION</div>
+            <h1 class="hero-title fade-in-delay">Congratulations, Hassnaa!</h1>
+            <p class="hero-subtitle fade-in-delay-2">A beautiful milestone achieved with grace, intelligence, and dedication. Today, your hard work shines bright.</p>
             <div class="hero-action fade-in-delay-3">
-
-                <a href="#letter-section" class="btn btn-primary scroll-link">
-
-    افتحي المفاجأة 🎁❤️
-
-</a>
-
+                <a href="#letter-section" class="btn btn-primary scroll-link">Open Your Surprise <i class="fas fa-heart"></i></a>
             </div>
-
         </div>
-
         <div class="hero-scroll-down">
             <i class="fas fa-chevron-down bounce"></i>
         </div>
-
     </header>
 
-    <!-- ================= LETTER ================= -->
-
+    <!-- Interactive Letter Section -->
     <section id="letter-section" class="letter-section">
-
         <div class="section-container">
-
             <div class="section-header">
-
-                <h2 class="section-title">
-
-                    رسالة ليكي ❤️
-
-                </h2>
-
-                <div class="section-divider">
-                    <span>🌹</span>
-                </div>
-
+                <h2 class="section-title">A Message For You</h2>
+                <div class="section-divider"><span>✿</span></div>
             </div>
 
+            <!-- Animated Envelope Container -->
             <div class="envelope-wrapper">
-
                 <div class="envelope" id="envelope">
-
                     <div class="flap"></div>
-
                     <div class="pocket"></div>
-
                     <div class="letter" id="letter">
-
                         <div class="letter-content">
-
-                            <div class="letter-date">
-
-                                يونيو 2026
-
-                            </div>
-
-                            <h3 class="letter-salutation">
-
-                                إلى أغلى حسناء ❤️
-
-                            </h3>
-
-                            <p>
-
-                                السلام عليكم ورحمة الله وبركاته 🌸
-
-                            </p>
-
-                            <p>
-
-                                ألف ألف مبروك يا حسناء على مناقشة مشروع التخرج.
-
-                            </p>
-
-                            <p>
-
-                                بجد أنا فخور بيكي جدًا...
-
-                                كل يوم تعبتي فيه،
-                                وكل مرة قلقتي،
-                                وكل ليلة سهرتي فيها،
-                                ربنا عوضك عنها بالفرحة الجميلة دي.
-
-                            </p>
-
-                            <p>
-
-                                يمكن المشروع خلص...
-
-                                لكن دي مجرد بداية لطريق مليان نجاحات وإنجازات أكبر بكتير.
-
-                            </p>
-
-                            <p>
-
-                                أنا واثق إن اللي جاي أجمل،
-                                وإن ربنا هيكرمك فوق ما تتخيلي،
-                                لأنك تعبتي واجتهدتي،
-                                وربنا عمره ما بيضيع تعب حد.
-
-                            </p>
-
-                            <p>
-
-                                خليكِ دايمًا مؤمنة بنفسك...
-
-                                لأنك تستحقي كل نجاح،
-                                وكل فرحة،
-                                وكل حلم بتحلمي بيه.
-
-                            </p>
-
-                            <p>
-
-                                ربنا يديم عليكي الضحكة،
-                                والنجاح،
-                                والسعادة،
-                                ويحققلك كل اللي نفسك فيه.
-
-                            </p>
-
-                            <p class="letter-closing">
-
-                                بكل الحب والفخر ❤️
-
-                            </p>
-
-                            <div class="letter-signature">
-
-                                يامن
-
-                            </div>
-
+                            <div class="letter-date">June 2026</div>
+                            <h3 class="letter-salutation">Dearest Hassnaa,</h3>
+                            <p>Congratulations on successfully completing your Graduation Discussion! 🎓✨</p>
+                            <p>Seeing you reach this incredible milestone fills my heart with immense pride and joy. Your dedication, long hours of study, and brilliant mind have brought you to this beautiful day. You faced every challenge of your graduation project with admirable grace, and today, you have proven how extraordinary you are.</p>
+                            <p>This is just the beginning of a wonderful journey filled with success, happiness, and endless opportunities. I am so incredibly proud of you, and I will always be here to support you, celebrate your victories, and walk by your side.</p>
+                            <p class="letter-closing">With all my love, admiration, and support always,</p>
+                            <div class="letter-signature">Your Biggest Fan ♥️</div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
-            <p class="envelope-hint">
-
-                اضغطي على الظرف عشان تقرأي الرسالة ✨
-
-            </p>
-
+            
+            <p class="envelope-hint">Click the envelope to open your letter ✨</p>
         </div>
-
     </section>
 
-    <!-- ================= MEMORY ================= -->
+    <!-- Virtual Bouquet Builder Section -->
 
+
+    <!-- Graduation Presentation (Memory & Success Showcase) -->
     <section id="memory-lane" class="memory-lane">
-
         <div class="section-container">
-
             <div class="section-header">
-
-                <h2 class="section-title">
-
-                    يوم من أجمل أيام العمر 💐
-
-                </h2>
-
-                <div class="section-divider">
-
-                    <span>🎓</span>
-
-                </div>
-
+                <h2 class="section-title">A Day of Pride and Joy</h2>
+                <div class="section-divider"><span>✿</span></div>
             </div>
 
             <div class="memory-showcase glass">
-
                 <div class="memory-image-container">
-
-                    <img src="assets/graduation_flowers.png"
-                         class="graduation-artwork">
-
+                    <img src="assets/graduation_flowers.png" alt="Graduation Cap and Celebration Flowers" class="graduation-artwork">
                     <div class="sparkle-overlay"></div>
-
                 </div>
-
                 <div class="memory-text-container">
-
-                    <h3 class="showcase-title">
-
-                        بداية حلم جديد ✨
-
-                    </h3>
-
+                    <h3 class="showcase-title">Your Bright Future Begins</h3>
                     <p class="showcase-description">
-
-                        النهارده مش مجرد مناقشة مشروع...
-
-                        النهارده بداية مرحلة جديدة كلها نجاح،
-                        وطموح،
-                        وأحلام هتتحقق بإذن الله.
-
+                        This special page stands as a small testament to your amazing achievement. Graduation discussion is a pivotal moment, requiring intensive effort, thorough research, and absolute dedication. Hassnaa, you did not just pass it; you excelled!
                     </p>
-
-                    <p class="showcase-description">
-
-                        كل تعبك كان يستحق اللحظة دي،
-                        وكل خطوة مشيتيها كانت بتقربك من حلمك.
-
-                    </p>
-
-                    <p class="showcase-description">
-
-                        وربنا يجعل كل خطوة جاية أحسن من اللي قبلها،
-                        ويفتحلك أبواب الخير كلها.
-
-                    </p>
-
                     <p class="showcase-quote">
-
-                        <!-- "ومن جد وجد... ومن زرع حصد." 🌸 -->
-
+                        "Success is the sum of small efforts, repeated day in and day out."
                     </p>
-
-                    <button id="celebrate-btn"
-                    class="btn btn-primary pulse-btn">
-
-                    يلا نحتفل 🎉🥳🎊
-
-                </button>
-
+                    <button id="celebrate-btn" class="btn btn-primary pulse-btn">Trigger Celebration! 🥳🎉</button>
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-    <!-- ================= FOOTER ================= -->
-
+    <!-- Sweet Graduation Wish Footer -->
     <footer class="footer">
-
         <div class="footer-content">
-
-            <p class="footer-heart">
-
-                ❤️ اتعمل بكل الحب والفخر علشان أحلى حسناء ❤️
-
-            </p>
-
-            <p class="footer-date">
-
-                <!-- 🎓 يوم مناقشة مشروع التخرج • يونيو 2026 🇪🇬 -->
-
-            </p>
-
+            <p class="footer-heart">Made with love and pride for Hassnaa ♥️</p>
+            <p class="footer-date">Graduation Project Discussion Day • June 2026</p>
         </div>
-
     </footer>
 
+    <!-- Main JavaScript File -->
     <script src="app.js"></script>
-
 </body>
 </html>
-```
